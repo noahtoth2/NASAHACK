@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Libro Digital</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Georgia", serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 1.2rem;
+      z-index: 1000;
+      backdrop-filter: blur(5px);
+    }
+
+    /* Sección estilo página normal */
+    .page {
+      min-height: 100vh;
+      padding: 80px 15%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .page h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    .page p {
+      font-size: 1.3rem;
+      text-align: justify;
+    }
+
+    /* Sección parallax (como ilustración de fondo) */
+    .parallax {
+      min-height: 100vh;
+      background-image: url("https://picsum.photos/1600/900");
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    📖 Mi Libro Digital
+  </header>
+
+  <!-- Portada -->
+  <section class="page">
+    <h1>Capítulo 1: El Viaje Comienza</h1>
+    <p>
+      Había una vez un pequeño explorador que soñaba con viajar a las estrellas.
+      Cada noche miraba el cielo y se preguntaba qué misterios ocultaba el universo.
+    </p>
+  </section>
+
+  <!-- Sección con parallax -->
+  <section class="parallax">
+    ✨ Una noche especial...
+  </section>
+
+  <!-- Otra página -->
+  <section class="page">
+    <h1>Capítulo 2: Entre las Estrellas</h1>
+    <p>
+      Al cerrar los ojos, el explorador sintió que flotaba. 
+      Cuando los abrió, descubrió que estaba viajando entre planetas y cometas, 
+      rodeado de luces brillantes.
+    </p>
+  </section>
+
+  <!-- Otra parallax -->
+  <section class="parallax">
+    🌌 El universo lo esperaba...
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    © 2025 - Mi Libro Digital
+  </footer>
+
+</body>
+</html>
