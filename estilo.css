@@ -214,7 +214,17 @@ body{
   display: flex;
   align-items: center;
   padding: 0 5%;
-  overflow: hidden; /* recorta bordes sobrantes */
+  
+}
+.gato-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: url("Imagenes/gatopreguntando.png"); /* tu imagen */
+  background-position: center bottom; /* lo pone abajo */
+  background-repeat: no-repeat;
+  background-size: 20%; /* ajusta tamaño */
+  z-index: 2; /* encima de la nave, debajo del texto */
+  pointer-events: none;
 }
 
 /* 🌌 Capa 1: fondo parallax */
