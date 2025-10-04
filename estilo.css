@@ -112,3 +112,93 @@
 }
 
 
+
+/* Página de clima espacial */
+.clima-espacial {
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start; /* texto a la izquierda */
+  align-items: center;
+  padding: 0 5%; /* margen lateral */
+  position: relative;
+  overflow: hidden;
+
+  background-image: url("Imagenes/fondo-espacial2.png"); /* fondo parallax */
+  background-attachment: fixed; /* parallax */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Contenedor de texto */
+.clima-contenido {
+  width: 40%; /* ocupa menos de la mitad de la pantalla */
+  background: rgba(15, 30, 60, 0.85); /* fondo semitransparente tipo holograma */
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.6);
+  border: 2px solid #00ffff;
+  color: #00ffff;
+  font-family: "Comic Sans MS", "Trebuchet MS", cursive, sans-serif;
+  text-align: left;
+}
+
+.clima-contenido h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 12px #00ffff;
+}
+
+.clima-contenido p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+/* Página: El descubrimiento con texto a la derecha */
+.descubrimiento {
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end; /* tarjeta a la derecha */
+  align-items: center;
+  padding: 0 5%; /* margen lateral */
+  position: relative;
+  overflow: hidden;
+
+  background-image: url("Imagenes/fondo-espacial3.png"); /* fondo parallax */
+  background-attachment: fixed; /* parallax */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Contenedor de contenido */
+.descubrimiento-contenido {
+  width: 30%; /* más pequeña que antes, para dejar espacio libre a la izquierda */
+  background: rgba(15, 30, 60, 0.85); /* fondo semitransparente tipo holograma */
+  padding: 25px; /* menos padding para tarjeta más compacta */
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.6);
+  border: 2px solid #00ffff;
+  color: #00ffff;
+  font-family: "Comic Sans MS", "Trebuchet MS", cursive, sans-serif;
+  text-align: left;
+}
+
+.descubrimiento-contenido h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 12px #00ffff;
+}
+
+.descubrimiento-contenido p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+
