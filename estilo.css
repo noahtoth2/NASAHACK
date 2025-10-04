@@ -218,27 +218,51 @@ body{
 
 
 
-/* Página de clima espacial */
+
+/* ===== Página: ¿Qué es el clima espacial? ===== */
 .clima-espacial {
+  position: relative;
   min-height: 100vh;
   display: flex;
-  justify-content: flex-start; /* texto a la izquierda */
   align-items: center;
-  padding: 0 5%; /* margen lateral */
-  position: relative;
-  overflow: hidden;
+  padding: 0 5%;
+  overflow: hidden; /* recorta bordes sobrantes */
+}
 
-  background-image: url("Imagenes/fondo-espacial2.png"); /* fondo parallax */
-  background-attachment: fixed; /* parallax */
+/* 🌌 Capa 1: fondo parallax */
+.parallax-bg {
+  position: absolute;
+  inset: 0; /* ocupa toda la pantalla */
+  background-image: url("Imagenes/fondopantalla.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed; /* efecto parallax */
+  z-index: 0;
+  pointer-events: none;
 }
 
-/* Contenedor de texto */
+/* 🚀 Capa 2: nave fija y centrada */
+.nave-overlay {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url("Imagenes/navesinfondo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* 💬 Contenedor de texto (derecha) */
 .clima-contenido {
-  width: 40%; /* ocupa menos de la mitad de la pantalla */
-  background: rgba(15, 30, 60, 0.85); /* fondo semitransparente tipo holograma */
+  position: relative;
+  z-index: 2;
+  width: 40%;
+  margin-left: auto; /* empuja el cuadro a la derecha */
+  background: rgba(15, 30, 60, 0.85);
   padding: 30px;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 200, 255, 0.6);
@@ -259,6 +283,18 @@ body{
   line-height: 1.8;
   margin-bottom: 15px;
 }
+
+/* 🔧 Ajuste móvil */
+@media (max-width: 820px) {
+  .parallax-bg {
+    background-attachment: scroll;
+  }
+
+  .clima-contenido {
+    width: 90%;
+  }
+}
+
 
 
 
