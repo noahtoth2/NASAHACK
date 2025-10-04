@@ -4,21 +4,12 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Comic Sans MS", "Trebuchet MS", cursive, sans-serif;
-  overflow-x: hidden;
 
-  /* Fondo base */
-  background-image: url("fondo\ pantalla\ 1.png"); /* tu imagen de fondo */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
 /* Portada con parallax */
 .portada {
   height: 100vh;
-  background-image: url("4dabcd6a-3a58-4ca3-9d7a-527135cc49d7.png"); /* tu imagen */
+  background-image: url("fondo\ pantalla\ 1.png"); /* tu imagen */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
