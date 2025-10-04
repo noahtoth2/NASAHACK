@@ -30,8 +30,8 @@ window.addEventListener('scroll', function(){
 
     if(value >= start && value <= end){
         let relativeScroll = value - start; 
-        gatoqn.style.top = -relativeScroll * 0.8 + 'px';
 
+        gatoqn.style.top = -relativeScroll * 0.8 + 'px';
 
     }
 
