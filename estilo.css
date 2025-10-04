@@ -69,6 +69,379 @@ body{
   z-index: 3;
 }
 
+/* Ficha de Cosmo: mitad derecha, estilo futurista */
+.ficha-derecha {
+  background-image: url("Imagenes/nave.png"); /* imagen de fondo */
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end; /* empuja el contenido a la derecha */
+  align-items: center;
+  padding: 0 5%; /* un poco de margen a los lados */
+  
+  position: relative;
+  overflow: hidden;
+}
+
+/* Contenedor de la ficha */
+.ficha-contenido {
+  width: 45%; /* ocupa menos de la mitad para dejar espacio vacío a la izquierda */
+  background: rgba(15, 30, 60, 0.85); /* fondo semitransparente tipo holograma */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 200, 255, 0.6);
+  border: 2px solid #00ffff; /* borde futurista */
+  color: #00ffff; /* texto azul neón */
+  font-family: "Comic Sans MS", "Trebuchet MS", cursive, sans-serif;
+  text-align: left; /* contenido alineado a la izquierda dentro de la tarjeta */
+}
+
+/* Título futurista */
+.ficha-contenido h2 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  text-shadow: 0 0 15px #00ffff;
+}
+
+/* Lista de datos */
+.ficha-contenido ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+.ficha-contenido li {
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  background: rgba(0, 255, 255, 0.1);
+  border-left: 4px solid #00ffff;
+  border-radius: 8px;
+}
+
+.parallax {
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+/* Página de clima espacial */
+.clima-espacial {
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start; /* texto a la izquierda */
+  align-items: center;
+  padding: 0 5%; /* margen lateral */
+  position: relative;
+  overflow: hidden;
+
+  background-image: url("Imagenes/fondo-espacial2.png"); /* fondo parallax */
+  background-attachment: fixed; /* parallax */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Contenedor de texto */
+.clima-contenido {
+  width: 40%; /* ocupa menos de la mitad de la pantalla */
+  background: rgba(15, 30, 60, 0.85); /* fondo semitransparente tipo holograma */
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.6);
+  border: 2px solid #00ffff;
+  color: #00ffff;
+  font-family: "Comic Sans MS", "Trebuchet MS", cursive, sans-serif;
+  text-align: left;
+}
+
+.clima-contenido h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 12px #00ffff;
+}
+
+.clima-contenido p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+/* Página: El descubrimiento con texto a la derecha */
+.descubrimiento {
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end; /* tarjeta a la derecha */
+  align-items: center;
+  padding: 0 5%; /* margen lateral */
+  position: relative;
+  overflow: hidden;
+
+  background-image: url("Imagenes/fondo-espacial3.png"); /* fondo parallax */
+  background-attachment: fixed; /* parallax */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Contenedor de contenido */
+.descubrimiento-contenido {
+  width: 30%; /* más pequeña que antes, para dejar espacio libre a la izquierda */
+  background: rgba(15, 30, 60, 0.85); /* fondo semitransparente tipo holograma */
+  padding: 25px; /* menos padding para tarjeta más compacta */
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.6);
+  border: 2px solid #00ffff;
+  color: #00ffff;
+  font-family: "Comic Sans MS", "Trebuchet MS", cursive, sans-serif;
+  text-align: left;
+}
+
+.descubrimiento-contenido h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 12px #00ffff;
+}
+
+.descubrimiento-contenido p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+
+/* Página: La tormenta (texto a la izquierda) */
+.tormenta {
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start; /* tarjeta a la izquierda */
+  align-items: center;
+  padding: 0 5%; /* margen lateral */
+  position: relative;
+  overflow: hidden;
+
+  background-image: url("Imagenes/fondo-espacial4.png"); /* fondo parallax */
+  background-attachment: fixed; /* parallax */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Contenedor de contenido */
+.tormenta-contenido {
+  width: 30%; /* tarjeta más compacta */
+  background: rgba(15, 30, 60, 0.85); /* fondo semitransparente tipo holograma */
+  padding: 25px; /* padding reducido */
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.6);
+  border: 2px solid #00ffff;
+  color: #00ffff;
+  font-family: "Comic Sans MS", "Trebuchet MS", cursive, sans-serif;
+  text-align: left;
+}
+
+.tormenta-contenido h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 12px #00ffff;
+}
+
+.tormenta-contenido p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+
+/* Página: ¿Por qué preocuparnos? (texto a la derecha, más ancho) */
+.preocupacion {
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end; /* tarjeta a la derecha */
+  align-items: center;
+  padding: 0 5%;
+  position: relative;
+  overflow: hidden;
+
+  background-image: url("Imagenes/fondo-espacial5.png"); /* fondo parallax */
+  background-attachment: fixed; /* parallax */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Contenedor de contenido */
+.preocupacion-contenido {
+  width: 50%; /* más ancho para texto largo */
+  background: rgba(15, 30, 60, 0.85);
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 200, 255, 0.6);
+  border: 2px solid #00ffff;
+  color: #00ffff;
+  font-family: "Comic Sans MS", "Trebuchet MS", cursive, sans-serif;
+  text-align: left;
+}
+
+.preocupacion-contenido h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 12px #00ffff;
+}
+
+.preocupacion-contenido p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+/* Página: La misión (texto a la izquierda) */
+.mision {
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start; /* tarjeta a la izquierda */
+  align-items: center;
+  padding: 0 5%;
+  position: relative;
+  overflow: hidden;
+
+  background-image: url("Imagenes/fondo-espacial6.png"); /* fondo parallax */
+  background-attachment: fixed; /* parallax */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Contenedor de contenido */
+.mision-contenido {
+  width: 40%; /* ancho adecuado para el texto */
+  background: rgba(15, 30, 60, 0.85); /* fondo semitransparente tipo holograma */
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.6);
+  border: 2px solid #00ffff;
+  color: #00ffff;
+  font-family: "Comic Sans MS", "Trebuchet MS", cursive, sans-serif;
+  text-align: left;
+}
+
+.mision-contenido h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 12px #00ffff;
+}
+
+.mision-contenido p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+/* Página: Llegada de la nube (texto más ancho a la derecha) */
+.llegada {
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end; /* tarjeta a la derecha */
+  align-items: center;
+  padding: 0 5%;
+  position: relative;
+  overflow: hidden;
+
+  background-image: url("Imagenes/fondo-espacial7.png"); /* fondo parallax */
+  background-attachment: fixed; /* parallax */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Contenedor de contenido */
+.llegada-contenido {
+  width: 55%; /* más ancho para que quepa el texto */
+  background: rgba(15, 30, 60, 0.85); /* fondo semitransparente tipo holograma */
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.6);
+  border: 2px solid #00ffff;
+  color: #00ffff;
+  font-family: "Comic Sans MS", "Trebuchet MS", cursive, sans-serif;
+  text-align: left;
+}
+
+.llegada-contenido h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 12px #00ffff;
+}
+
+.llegada-contenido p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+/* Página: El ronroneo del descanso (texto a la izquierda) */
+.ronroneo {
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start; /* tarjeta a la izquierda */
+  align-items: center;
+  padding: 0 5%;
+  position: relative;
+  overflow: hidden;
+
+  background-image: url("Imagenes/fondo-espacial8.png"); /* fondo parallax */
+  background-attachment: fixed; /* parallax */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Contenedor de contenido */
+.ronroneo-contenido {
+  width: 40%; /* ancho adecuado para el texto */
+  background: rgba(15, 30, 60, 0.85); /* fondo semitransparente tipo holograma */
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.6);
+  border: 2px solid #00ffff;
+  color: #00ffff;
+  font-family: "Comic Sans MS", "Trebuchet MS", cursive, sans-serif;
+  text-align: left;
+}
+
+.ronroneo-contenido h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 12px #00ffff;
+}
+
+.ronroneo-contenido p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
 
 
 
