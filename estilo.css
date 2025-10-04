@@ -208,29 +208,33 @@ body{
 
 
 /* ===== Página: ¿Qué es el clima espacial? ===== */
+/* ===== Página: ¿Qué es el clima espacial? ===== */
 .clima-espacial {
   position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: flex-start; /* 🔹 cuadro a la izquierda */
   padding: 0 5%;
-  
+  overflow: hidden;
 }
+
+/* 🐱 Capa del gato (abajo y centrado) */
 .gato-overlay {
   position: absolute;
   inset: 0;
-  background-image: url("Imagenes/gatopreguntando.png"); /* tu imagen */
-  background-position: center bottom; /* lo pone abajo */
+  background-image: url("Imagenes/gatopreguntando.png");
+  background-position: center bottom; /* se queda abajo */
   background-repeat: no-repeat;
-  background-size: 20%; /* ajusta tamaño */
-  z-index: 2; /* encima de la nave, debajo del texto */
+  background-size: 20%; /* ajusta tamaño del gato */
+  z-index: 2; /* encima del fondo y nave, debajo del texto */
   pointer-events: none;
 }
 
 /* 🌌 Capa 1: fondo parallax */
 .parallax-bg {
   position: absolute;
-  inset: 0; /* ocupa toda la pantalla */
+  inset: 0;
   background-image: url("Imagenes/fondopantalla.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -254,12 +258,12 @@ body{
   pointer-events: none;
 }
 
-/* 💬 Contenedor de texto (derecha) */
+/* 💬 Contenedor de texto (izquierda) */
 .clima-contenido {
   position: relative;
-  z-index: 2;
+  z-index: 3; /* sobre el gato */
   width: 40%;
-  margin-left: auto; /* empuja el cuadro a la derecha */
+  margin-right: auto; /* 🔹 lo empuja hacia la izquierda */
   background: rgba(15, 30, 60, 0.85);
   padding: 30px;
   border-radius: 20px;
@@ -268,6 +272,23 @@ body{
   color: #00ffff;
   font-family: "Comic Sans MS", "Trebuchet MS", cursive, sans-serif;
   text-align: left;
+}
+
+/* ☀️ Capa 2: sol */
+.sol-overlay {
+  position: absolute;
+  top: -20%; /* 🔹 distancia desde arriba */
+  left: 10%; /* centrado horizontal */
+  transform: translateX(-50%); /* corrige el centrado */
+  width: 1000px; /* tamaño del sol */
+  height: 1000px;
+  background-image: url("Imagenes/sol.png"); /* tu imagen del sol */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: 1; /* sobre el fondo, debajo de la nave */
+  pointer-events: none;
+  opacity: 0.9; /* un poco transparente para integrarse */
 }
 
 .clima-contenido h2 {
@@ -290,8 +311,14 @@ body{
 
   .clima-contenido {
     width: 90%;
+    margin: 0 auto; /* centrado en móviles */
+  }
+
+  .gato-overlay {
+    background-size: 35%; /* gato más grande en pantallas pequeñas */
   }
 }
+
 
 
 
