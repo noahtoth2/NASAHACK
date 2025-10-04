@@ -1,7 +1,5 @@
 
 
-
-
 * {
   margin: 0;
   padding: 0;
@@ -188,6 +186,19 @@ body{
   pointer-events: none;
 }
 
+/* Contenedor de la ficha */
+.ficha-contenido {
+  width: 45%; /* ocupa menos de la mitad para dejar espacio vacío a la izquierda */
+  background: rgba(15, 30, 60, 0.85); /* fondo semitransparente tipo holograma */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 200, 255, 0.6);
+  border: 2px solid #00ffff; /* borde futurista */
+  color: #00ffff; /* texto azul neón */
+  font-family: "Comic Sans MS", "Trebuchet MS", cursive, sans-serif;
+  text-align: left; /* contenido alineado a la izquierda dentro de la tarjeta */
+  z-index: 2;
+}
 
 
 
