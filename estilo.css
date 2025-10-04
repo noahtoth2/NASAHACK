@@ -7,6 +7,12 @@
 body {
   font-family: "Comic Sans MS", "Trebuchet MS", cursive, sans-serif;
   overflow-x: hidden;
+
+  /* Fondo base */
+  background-image: url("fondo\ pantalla\ 1.png"); /* tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Portada con parallax */
