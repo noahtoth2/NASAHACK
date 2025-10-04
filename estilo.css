@@ -1,7 +1,5 @@
 
 
-
-
 * {
   margin: 0;
   padding: 0;
@@ -140,7 +138,7 @@ body{
   color: #00ffff; /* texto azul neón */
   font-family: "Comic Sans MS", "Trebuchet MS", cursive, sans-serif;
   text-align: left; /* contenido alineado a la izquierda dentro de la tarjeta */
-  z-index: ;
+  z-index: 2;
 }
 
 /* Título futurista */
