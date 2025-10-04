@@ -12,28 +12,27 @@ body{
   background-color: #0a2a43;
   font-family: 'Comic Neue', cursive;
 }
-
-.portada{
+.portada {
   position: relative;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+  overflow: hidden; /* respeta los bordes */
   display: flex;
   justify-content: center;
 
 }
 
-.portada::before{
+.portada::before {
   content: '';
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 100px;
   background: linear-gradient(to top,#0a2a43 , transparent);
-  z-index:10000;
+  z-index: 10000;
 }
 
-.portada::after{
+.portada::after {
   content: '';
   position: absolute;
   top:0;
@@ -41,8 +40,8 @@ body{
   width: 100%;
   height: 100%;
   z-index: 10000;
-
 }
+
 
 .portada img{
   position: absolute;
@@ -78,33 +77,100 @@ body{
 
 
 
-/* Sección de introducción */
-.intro {
-  min-height: 100vh;
-  padding: 60px 15%;
-  background: #f4f4f4;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-.intro p {
-  font-size: 1.4rem;
-  line-height: 1.8;
-}
-
-/* Ficha de Cosmo: mitad derecha, estilo futurista */
 .ficha-derecha {
-  background-image: url("Imagenes/nave.png"); /* imagen de fondo */
-  min-height: 100vh;
+  background-image: url("Imagenes/fondoquienes.gif");
+  background-size: cover;            /* hace que el fondo ocupe todo el ancho */
+  background-position: center;       
+  background-repeat: no-repeat;    
   display: flex;
-  justify-content: flex-end; /* empuja el contenido a la derecha */
-  align-items: center;
-  padding: 0 5%; /* un poco de margen a los lados */
-  
-  position: relative;
-  overflow: hidden;
+  justify-content: center;         /* empuja el contenido hacia la derecha */
+  overflow: hidden;  
+  height: 200vh;             
+}
+
+.quien{
+   position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; /* respeta los bordes */
+  display: flex;
+  justify-content: center;
+
+}
+
+.quien::after {
+  content: '';
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+}
+
+.quien::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top,#0a2a43 , transparent);
+  z-index: 10000;
+}
+
+.quien img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+
+}
+
+/* Contenedor de la ficha */
+.ficha-contenido {
+  width: 45%; /* ocupa menos de la mitad para dejar espacio vacío a la izquierda */
+  background: rgba(15, 30, 60, 0.85); /* fondo semitransparente tipo holograma */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 200, 255, 0.6);
+  border: 2px solid #00ffff; /* borde futurista */
+  color: #00ffff; /* texto azul neón */
+  font-family: "Comic Sans MS", "Trebuchet MS", cursive, sans-serif;
+  text-align: left; /* contenido alineado a la izquierda dentro de la tarjeta */
+  z-index: ;
+}
+
+/* Título futurista */
+.ficha-contenido h2 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  text-shadow: 0 0 15px #00ffff;
+}
+
+/* Lista de datos */
+.ficha-contenido ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+
+.ficha-contenido li {
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  background: rgba(0, 255, 255, 0.1);
+  border-left: 4px solid #00ffff;
+  border-radius: 8px;
+}
+
+.parallax {
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
 /* Contenedor de la ficha */
