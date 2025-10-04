@@ -4,27 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cosmo, el Gato Galáctico</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
 
   <!-- Portada -->
   <section class="portada">
-    <h1>Cosmo, el Gato Galáctico</h1>
+    <img src="Imagenes/fondopantalla.png" alt="Imagenes" id="bg">
+    <img src="Imagenes/navesinfondo.png" id="nave"> <!--road-->
+    <img src="Imagenes/sol.png" id="sol">
+    <img src="Imagenes/gato.png" id="gato">  
+  <div class="text " id="text">
+      <h1>Cosmo, el Gato Galáctico</h1>
     <h2>y la Tormenta Solar</h2>
+  </div>
   </section>
 
-  <!-- Introducción -->
-  <section class="ficha">
-  <h2>Quién es Cosmo</h2>
-  <ul>
-    <li><strong>Nombre:</strong> Cosmo</li>
-    <li><strong>Edad:</strong> 7 años gatunos (equivalentes a un joven explorador en años humanos).</li>
-    <li><strong>Qué hace:</strong> Es un explorador galáctico que trabaja vigilando el clima espacial desde una pequeña estación espacial cerca de la Luna.</li>
-    <li><strong>Relación con el clima espacial:</strong> Su misión es observar el Sol, detectar llamaradas solares y eyecciones de masa coronal, y enviar alertas a la Tierra para que la gente y la tecnología estén a salvo.</li>
-    <li><strong>Desafío:</strong> Cuando ocurre una tormenta solar muy fuerte, debe explicar qué está pasando y ayudar a que no cunda el pánico.</li>
-  </ul>
-</section>
+<section>
+
+
+
+
+<script>
+let bg = document.getElementById("bg");
+let sol = document.getElementById("sol");
+let gato = document.getElementById("gato");
+let nave = document.getElementById("nave");
+
+let scrollValue = 0;
+
+window.addEventListener('scroll', function () {
+  scrollValue = window.scrollY;
+  requestAnimationFrame(updateParallax);
+});
+
+function updateParallax() {
+  bg.style.transform = `translateY(${scrollValue * 0.5}px)`;
+  sol.style.transform = `translateX(${-scrollValue * 0.5}px)`;
+  gato.style.transform = `translateY(${-scrollValue * 0.15}px)`;
+  nave.style.transform = `translateY(${scrollValue * 1}px)`;
+}
+</script>
+
 
 </body>
 </html>
