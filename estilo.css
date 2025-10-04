@@ -55,38 +55,60 @@
   line-height: 1.8;
 }
 
-
-
-/* Ficha de Cosmo */
-.ficha {
+/* Ficha de Cosmo: mitad derecha, estilo futurista */
+.ficha-derecha {
+  background-image: url("Imagenes/nave.png"); /* imagen de fondo */
   min-height: 100vh;
-  padding: 60px 15%;
-  background: #e0f7fa; /* color suave para niños */
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-  border-top: 5px solid #00bcd4;
+  justify-content: flex-end; /* empuja el contenido a la derecha */
+  align-items: center;
+  padding: 0 5%; /* un poco de margen a los lados */
+  
+  position: relative;
+  overflow: hidden;
 }
 
-.ficha h2 {
+/* Contenedor de la ficha */
+.ficha-contenido {
+  width: 45%; /* ocupa menos de la mitad para dejar espacio vacío a la izquierda */
+  background: rgba(15, 30, 60, 0.85); /* fondo semitransparente tipo holograma */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 200, 255, 0.6);
+  border: 2px solid #00ffff; /* borde futurista */
+  color: #00ffff; /* texto azul neón */
+  font-family: "Comic Sans MS", "Trebuchet MS", cursive, sans-serif;
+  text-align: left; /* contenido alineado a la izquierda dentro de la tarjeta */
+}
+
+/* Título futurista */
+.ficha-contenido h2 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #007c91;
-  text-align: center;
+  margin-bottom: 25px;
+  text-shadow: 0 0 15px #00ffff;
 }
 
-.ficha ul {
-  list-style: none; /* quitamos los bullets */
-  font-size: 1.3rem;
-  line-height: 2;
+/* Lista de datos */
+.ficha-contenido ul {
+  list-style: none;
   padding-left: 0;
+  font-size: 1.2rem;
+  line-height: 2;
 }
 
-.ficha li {
-  background: rgba(255, 255, 255, 0.8);
-  margin-bottom: 10px;
-  padding: 12px 15px;
-  border-radius: 12px;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+.ficha-contenido li {
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  background: rgba(0, 255, 255, 0.1);
+  border-left: 4px solid #00ffff;
+  border-radius: 8px;
 }
+
+.parallax {
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+
