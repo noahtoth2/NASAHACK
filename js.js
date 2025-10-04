@@ -10,4 +10,5 @@ window.addEventListener('scroll', function(){
     sol.style.left= -value * 0.5 + 'px';
     nave.style.top= value * 0.15 + 'px';
     text.style.top = value * 1 + 'px';
+    gato.style.left = -value * -0.3 + 'px';
 })
