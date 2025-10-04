@@ -28,7 +28,6 @@ window.addEventListener('scroll', function(){
         let relativeScroll = value - start; 
 
     
-        luna.style.top = relativeScroll * 0.5 + 'px';
-        gatoqn.style.top = -relativeScroll * 0.5 + 'px';
+        gatoqn.style.top = -relativeScroll * 0.8 + 'px';
     }
 });
