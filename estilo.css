@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Comic Sans MS", "Trebuchet MS", cursive, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Portada con parallax */
+.portada {
+  height: 100vh;
+  background-image: url("4dabcd6a-3a58-4ca3-9d7a-527135cc49d7.png"); /* tu imagen */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+  padding: 20px;
+}
+
+.portada h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+.portada h2 {
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 8px 15px;
+  border-radius: 12px;
+}
+
+/* Sección de introducción */
+.intro {
+  min-height: 100vh;
+  padding: 60px 15%;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.intro p {
+  font-size: 1.4rem;
+  line-height: 1.8;
+}
