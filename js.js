@@ -31,6 +31,8 @@ window.addEventListener('scroll', function(){
     if(value >= start && value <= end){
         let relativeScroll = value - start; 
         gatoqn.style.top = -relativeScroll * 0.8 + 'px';
+
+
     }
 
     let startdes = descubrimiento.offsetTop; 
